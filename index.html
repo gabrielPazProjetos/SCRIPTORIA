@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Scriptoria</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <div class="brand">
+        <!-- Espaço para ícone -->
+        <img src="img/Logo.png" alt="Logo" class="brand__icon">
+        <h1 class="logo">Scriptoria</h1>
+      </div>
+      <nav class="nav">
+        <button id="btn-sobre" class="btn" data-label="Sobre">Sobre</button>
+        <button id="btn-atualizacoes" class="btn" data-label="Atualizações">Atualização</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container hero__content">
+      <h2>Um espaço inspirado nos antigos códices, onde o conhecimento sobre programação é preservado.</h2>
+    </div>
+  </main>
+
+  <!-- Painel de tópicos oculto -->
+  <section id="topicos-panel" class="panel">
+    <div class="container">
+      <ul>
+        <li><a href="wiki/python.html">Python</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>2025 Scriptoria — Todos os Direitos Reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Redirecionamentos dos botões
+    document.getElementById("btn-sobre").onclick = function() {
+      window.location.href = "sobre/sobre.html";
+    };
+
+    document.getElementById("btn-atualizacoes").onclick = function() {
+      window.location.href = "atualizacao/atualizacao.html";
+    };
+  </script>
+</body>
+</html>
