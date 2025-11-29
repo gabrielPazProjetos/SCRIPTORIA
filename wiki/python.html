@@ -12,7 +12,7 @@
         <h1 class="logo">Scriptoria</h1>
       </div>
       <nav class="nav">
-        <a href="../index.html" class="btn">Início</a>
+        <a href="../index.html" class="btn btn--soft">Início</a>
       </nav>
     </div>
   </header>
@@ -38,7 +38,7 @@ Esses são os blocos fundamentais: variáveis para guardar informações, estrut
 Outro ponto essencial é a comunidade. Python é mantido por milhares de desenvolvedores que compartilham tutoriais, bibliotecas e soluções. Isso significa que qualquer dúvida pode ser resolvida com relativa facilidade. Além disso, a linguagem está em constante evolução, recebendo melhorias que garantem sua relevância.</p>
 <h2>Estrutura de código</h2>
 <p>
-    Python é uma linguagem de programação que, diferentemente de HTML, não possui uma estrutura rígida de marcação com elementos fixos como <head> e <body>. Em vez disso, a organização de um código Python segue uma lógica funcional e didática, que pode ser entendida como uma narrativa bem estruturada. Para compreender a anatomia de um programa em Python, é preciso observar cada parte que compõe o arquivo e perceber como elas se relacionam para formar um sistema coerente.
+    Python é uma linguagem de programação que, diferentemente de HTML, não possui uma estrutura rígida de marcação com elementos fixos como head e body. Em vez disso, a organização de um código Python segue uma lógica funcional e didática, que pode ser entendida como uma narrativa bem estruturada. Para compreender a anatomia de um programa em Python, é preciso observar cada parte que compõe o arquivo e perceber como elas se relacionam para formar um sistema coerente.
 Um arquivo Python pode começar com uma linha opcional chamada shebang, usada em sistemas Unix e Linux para indicar ao sistema operacional qual interpretador deve executar o script. Essa linha não é obrigatória, mas quando presente permite que o programa seja rodado diretamente no terminal. Logo abaixo, é comum encontrar uma docstring inicial, escrita entre aspas triplas, que descreve o propósito do arquivo. Essa docstring funciona como uma introdução textual, explicando em linguagem natural o que o programa faz, quem o escreveu ou quais são suas instruções de uso. Ela não interfere na execução, mas serve como documentação e pode ser lida por ferramentas automáticas.
 Depois da docstring, aparecem as importações. Essa seção é responsável por trazer para dentro do programa módulos e bibliotecas que oferecem funcionalidades adicionais. É recomendável organizar as importações em grupos: primeiro os módulos da biblioteca padrão do Python, depois os pacotes externos instalados com pip, e por último os módulos locais do próprio projeto. Essa ordem facilita a leitura e deixa claro de onde vêm os recursos utilizados. As importações podem ser vistas como o momento em que o programador reúne suas ferramentas antes de começar a construir a lógica principal.
 Em seguida, podem ser declaradas constantes e variáveis globais, que representam valores fixos ou configurações usadas em várias partes do programa. Em Python, convencionamos escrever constantes em letras maiúsculas para diferenciá-las de variáveis comuns. Esse bloco funciona como um conjunto de parâmetros iniciais que guiam o comportamento do programa, como taxas, caminhos de arquivos ou chaves de configuração.
@@ -52,20 +52,20 @@ Assim, a estrutura completa de um código Python pode ser entendida como um conj
   </main>
 
   <section class="container my-3">
-    <h3>Exemplo de código</h3>
-    <h3>Abaixo estão exemplos curtos de Python com explicações claras do propósito de cada um. Fique a vontade para copiar e colar diretamente no seu site ou adaptar o texto. Cada exemplo mostra um conceito essencial da linguagem.</h3>
-<h3>Saída no console: Para muitos, esta é a linha de código que define a programção, usado como ritual de sorte para que seu código funcione bem. Exibe mensagens na tela para checar valores durante o desenvolvimento, mostrar resultados para o usuário ou registrar logs simples</h3>
+    <h3>Exemplo de código em Python</h3>
+    <h3>Abaixo estão exemplos curtos de Python com explicações claras do propósito de cada um. Fique a vontade para copiar e colar diretamente no seu site ou adaptar o texto. Cada exemplo mostra um conceito essencial da linguagem.</h2>
+<p>Saída no console: Para muitos, esta é a linha de código que define a programação, usado como ritual de sorte para que seu código funcione bem. Exibe mensagens na tela para checar valores durante o desenvolvimento, mostrar resultados para o usuário ou registrar logs simples</p>
     <pre><code>
 print("Olá, Scriptoria!")
 </code></pre>
-<h3>Variáveis e operações: Armazena dados (texto e números) e combina informações com f-strings sem precisar converter tipos manualmente. Útil para montar mensagens e relatórios.</h3>
+<p>Variáveis e operações: Armazena dados (texto e números) e combina informações com f-strings sem precisar converter tipos manualmente. Útil para montar mensagens e relatórios.</p>
 <pre><code>
     nome = "Ana"
 idade = 22
 mensagem = f"{nome} tem {idade} anos."
 print(mensagem)
 </code></pre>
-<h3>Decisão com if/elif/else: Escolhe caminhos diferentes conforme uma condição. Fundamental para validações, regras de negócio e feedback ao usuário.</h3>
+<p>Decisão com if/elif/else: Escolhe caminhos diferentes conforme uma condição. Fundamental para validações, regras de negócio e feedback ao usuário.</p>
 <pre><code>
     nota = 7.5
 if nota >= 9:
@@ -76,19 +76,19 @@ else:
     conceito = "C"
 print(conceito)
 </code></pre>
-<h3>Laço for (iteração): Percorre coleções (listas, tuplas, conjuntos) executando uma ação para cada elemento. Ótimo para processar dados em lote.</h3>
+<p>Laço for (iteração): Percorre coleções (listas, tuplas, conjuntos) executando uma ação para cada elemento. Ótimo para processar dados em lote.</p>
 <code><pre>
     for idioma in ["Python", "JavaScript", "C++"]:
     print(f"Aprender {idioma} é útil.")
 </pre></code>
-<h3>Laço while (repetição controlada):Repete enquanto a condição for verdadeira. Útil em situações com estado que muda ao longo do tempo (timers, filas, reintentos).</h3>
+<p>Laço while (repetição controlada):Repete enquanto a condição for verdadeira. Útil em situações com estado que muda ao longo do tempo (timers, filas, reintentos).</p>
 <code><pre>
     contador = 3
 while contador > 0:
     print("Contando...", contador)
     contador -= 1
 </pre></code>
-<h3>Função com retorno: Encapsula uma tarefa com entradas e saída. Facilita reutilização, testes e organização do código.</h3>
+<p>Função com retorno: Encapsula uma tarefa com entradas e saída. Facilita reutilização, testes e organização do código.</p>
 <code><pre>
     def soma(a, b):
     return a + b
@@ -96,46 +96,46 @@ while contador > 0:
 resultado = soma(2, 3)
 print(resultado)
 </pre></code>
-<h3>Lista e operações comuns: Armazena sequências mutáveis. É usada para coleções ordenadas, filas simples e processamento sequencial.</h3>
+<p>Lista e operações comuns: Armazena sequências mutáveis. É usada para coleções ordenadas, filas simples e processamento sequencial.</p>
 <code><pre>
     numeros = [3, 1, 4]
 numeros.append(2)   # adiciona
 ordenados = sorted(numeros)  # retorna nova lista ordenada
 print(ordenados)
 </pre></code>
-<h3>Dicionário (chave-valor): Representa registros com campos nomeados. Ideal para configurações, perfis de usuário e resultados de APIs.</h3>
+<p>Dicionário (chave-valor): Representa registros com campos nomeados. Ideal para configurações, perfis de usuário e resultados de APIs.</p>
 <code><pre>
     user = {"nome": "Lia", "ativo": True, "nivel": 5}
 user["cidade"] = "Recife"
 print(user["nome"])
 </pre></code>
-<h3>Compreensão de lista (list comprehension): Cria listas derivadas de forma concisa e legível. Ótimo para transformar dados sem escrever loops extensos.</h3>
+<p>Compreensão de lista (list comprehension): Cria listas derivadas de forma concisa e legível. Ótimo para transformar dados sem escrever loops extensos.</p>
 <code><pre>
     quadrados = [n*n for n in range(1, 6)]
 print(quadrados)
 </pre></code>
 <h3>Arquivos, erros e utilidades</h3>
-<h3>Leitura de arquivo: Abre e lê o conteúdo de um arquivo com segurança (o with fecha o arquivo automaticamente). Útil para importar dados e configurações.</h3>
+<p>Leitura de arquivo: Abre e lê o conteúdo de um arquivo com segurança (o with fecha o arquivo automaticamente). Útil para importar dados e configurações.</p>
 <code><pre>
     with open("dados.txt", "r", encoding="utf-8") as f:
     conteudo = f.read()
 print(conteudo)
 </pre></code>
-<h3>Tratamento de exceções: Evita que o programa quebre ao lidar com erros previstos (conversões, rede, arquivos). Permite mensagens amigáveis e recuperação de fluxo.</h3>
+<p>Tratamento de exceções: Evita que o programa quebre ao lidar com erros previstos (conversões, rede, arquivos). Permite mensagens amigáveis e recuperação de fluxo.</p>
 <code><pre>
     try:
     valor = int("42a")
 except ValueError as e:
     print("Entrada inválida:", e)
 </pre></code>
-<h3>Uso de biblioteca padrão (math): Importa módulos prontos para tarefas comuns. A biblioteca padrão oferece utilidades para matemática, datas, arquivos e muito mais.</h3>
+<p>Uso de biblioteca padrão (math): Importa módulos prontos para tarefas comuns. A biblioteca padrão oferece utilidades para matemática, datas, arquivos e muito mais.</p>
 <code><pre>
     import math
 raiz = math.sqrt(16)
 print(raiz)
 </pre></code>
 <h3>Orientação a objetos e tipagem</h3>
-<h3>Classe simples: Modela entidades com estado e comportamento (ex.: contas, produtos, pedidos). Facilita expansão e manutenção em sistemas maiores.</h3>
+<p>Classe simples: Modela entidades com estado e comportamento (ex.: contas, produtos, pedidos). Facilita expansão e manutenção em sistemas maiores.</p>
 <code><pre>
 class Conta:
     def __init__(self, titular, saldo=0.0):
@@ -149,7 +149,7 @@ c = Conta("Nara")
 c.depositar(100.0)
 print(c.saldo)
 </pre></code>
-<h3>Dataclass e tipo de retorno: Dataclasses reduzem código boilerplate em classes de dados, e anotações de tipo melhoram leitura, ajudam ferramentas e evitam erros lógicos.</h3>
+<p>Dataclass e tipo de retorno: Dataclasses reduzem código boilerplate em classes de dados, e anotações de tipo melhoram leitura, ajudam ferramentas e evitam erros lógicos.</p>
 <code><pre>
     from dataclasses import dataclass
 
@@ -164,13 +164,13 @@ def total(precos: list[float]) -> float:
 print(total([10.0, 5.5]))
 </pre></code>
 <h3>Scripts úteis e linha de comando</h3>
-<h3>Argumentos via linha de comando: Permite passar parâmetros ao executar o script (ex.: python app.py Ana). Útil para automações, ferramentas e integrações.</h3>
+<p>Argumentos via linha de comando: Permite passar parâmetros ao executar o script (ex.: python app.py Ana). Útil para automações, ferramentas e integrações.</p>
 <code><pre>
     import sys
 nome = sys.argv[1] if len(sys.argv) > 1 else "Mundo"
 print(f"Olá, {nome}!")
 </pre></code>
-<h3>Requisição HTTP simples: Acessa serviços web e APIs. Essencial em integrações, robôs, coleta de dados e backends.</h3>
+<p>Requisição HTTP simples: Acessa serviços web e APIs. Essencial em integrações, robôs, coleta de dados e backends.</p>
 <code><pre>
     import requests
 r = requests.get("coloque a URL aqui")
