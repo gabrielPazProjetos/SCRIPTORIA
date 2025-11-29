@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Java — Scriptoria</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <div class="brand">
+        <h1 class="logo">Scriptoria</h1>
+      </div>
+      <nav class="nav">
+        <a href="../index.html" class="btn btn--soft">Início</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container hero__content">
+      <h2>Sobre Java</h2>
+      <p>
+Java foi criado no início da década de 1990, mais precisamente em 1991, por uma equipe de engenheiros da empresa Sun Microsystems, liderada por James Gosling, e originalmente começou como um projeto chamado Oak, com o objetivo de desenvolver uma linguagem de programação que pudesse ser utilizada em dispositivos eletrônicos, como televisores, caixas eletrônicos e outros aparelhos que precisassem de software para funcionar de maneira eficiente, oferecendo portabilidade e simplicidade, algo que na época era bastante inovador; o grande desafio enfrentado pela equipe era criar uma linguagem que permitisse que programas fossem escritos uma única vez e executados em diferentes sistemas operacionais sem necessidade de alterações no código, uma ideia revolucionária conhecida hoje pelo lema “write once, run anywhere” (“escreva uma vez, rode em qualquer lugar”), que se tornou um dos princípios fundamentais do Java e que contribuiu diretamente para seu sucesso futuro; em 1995, a Sun Microsystems lançou oficialmente o Java para o público, e a linguagem rapidamente se destacou devido à sua capacidade de rodar aplicações na internet, como applets em navegadores, além de sistemas corporativos que exigiam segurança, estabilidade e confiabilidade; o nome “Java” foi escolhido posteriormente em homenagem ao café Java, consumido em grande quantidade pelos engenheiros da equipe durante o desenvolvimento, simbolizando energia, criatividade e produtividade, características que a linguagem busca transmitir aos programadores; desde seu lançamento, o Java evoluiu constantemente, mantendo princípios originais como simplicidade, portabilidade, segurança e robustez, e se consolidou como uma das linguagens de programação mais utilizadas do mundo, sendo aplicada em desenvolvimento de aplicativos móveis, especialmente no Android, sistemas empresariais, softwares embarcados, aplicativos web, bancos de dados e até mesmo em supercomputadores; além disso, a comunidade de desenvolvedores Java cresceu significativamente, criando um vasto ecossistema de bibliotecas, frameworks e ferramentas que facilitam a programação, aumentam a produtividade e garantem maior segurança e confiabilidade nas aplicações; assim, Java representa não apenas uma linguagem de programação, mas um marco na história da tecnologia, surgindo da necessidade de resolver problemas de compatibilidade e portabilidade, evoluindo com os avanços da internet e se consolidando como uma ferramenta essencial para programadores de todos os níveis, combinando inovação, robustez e acessibilidade de forma contínua e relevante para o desenvolvimento de softwares em múltiplos contextos e plataformas.
+      <p>
+Java é uma linguagem de programação criada para ser robusta, segura e portátil, desenvolvida pela Sun Microsystems em 1995, sob a liderança de James Gosling, com o objetivo de criar uma linguagem que pudesse ser utilizada em diferentes dispositivos e sistemas operacionais sem necessidade de alterações no código, seguindo o lema “write once, run anywhere”, ou seja, escreva uma vez, rode em qualquer lugar, algo que revolucionou a forma como programas eram desenvolvidos e distribuídos; aprender Java significa abrir portas para o desenvolvimento de aplicações para desktop, web, dispositivos móveis, sistemas embarcados e até mesmo servidores corporativos, permitindo que o programador construa soluções confiáveis, escaláveis e de alto desempenho; para começar a programar em Java, é necessário instalar o JDK (Java Development Kit), que contém o compilador, bibliotecas padrão e ferramentas essenciais para escrever, compilar e executar programas; após a instalação, o usuário pode criar um arquivo com extensão .java e escrever suas primeiras instruções, entendendo que, diferente de linguagens interpretadas como Python, o Java precisa ser compilado para bytecode antes de ser executado na JVM (Java Virtual Machine), que é responsável por interpretar o bytecode em qualquer sistema operacional, garantindo a portabilidade da aplicação; na linguagem Java, tudo é organizado dentro de classes, que funcionam como moldes para objetos, e cada programa geralmente possui uma classe principal que contém o método main, ponto de entrada do programa, onde as instruções são executadas sequencialmente; conceitos fundamentais como variáveis, tipos de dados, operadores e estruturas de controle, incluindo condicionais (if, else) e laços de repetição (for, while), são aplicados dentro das classes e métodos, permitindo ao programador definir o comportamento do software de maneira clara e estruturada; além disso, Java incentiva a reutilização e organização do código por meio de funções chamadas métodos, que recebem parâmetros, executam operações e retornam resultados, promovendo modularidade e facilitando a manutenção; a linguagem possui ainda um conjunto extenso de bibliotecas padrão que fornecem funcionalidades prontas, desde manipulação de arquivos e interfaces gráficas até recursos de rede, coleções de dados e criptografia, tornando possível desenvolver aplicações completas sem depender de ferramentas externas; outro ponto essencial para quem aprende Java é compreender a sintaxe orientada a objetos, que inclui conceitos como encapsulamento, herança e polimorfismo, permitindo que o programador modele o mundo real dentro do código de forma organizada e flexível; por fim, a comunidade Java é extremamente ativa, com milhares de desenvolvedores, fóruns, cursos e projetos de código aberto que tornam o aprendizado mais acessível e possibilitam que qualquer dúvida ou problema seja solucionado rapidamente, tornando o Java uma linguagem confiável, moderna e essencial para programadores de todos os níveis.
+<h2>Estrutura de código</h2>
+<p>
+    A estrutura de um código Java segue um padrão organizado e orientado a objetos, que permite que programas sejam escritos de forma modular, reutilizável e de fácil manutenção; cada programa Java é composto principalmente por classes, que são blocos de código que representam entidades ou funcionalidades dentro do software, e dentro dessas classes existem métodos, que são sequências de instruções que executam tarefas específicas; o ponto de entrada de qualquer programa Java é o método main, definido como public static void main(String[] args), que indica para a JVM onde iniciar a execução do programa, garantindo que o fluxo das instruções seja seguido de forma controlada e previsível; variáveis e constantes são declaradas dentro de métodos ou classes, e cada uma possui um tipo específico, como int, double, boolean ou String, definindo que tipo de valor podem armazenar e como podem ser manipuladas; estruturas de controle, como condicionais (if, else if, else) e loops (for, while, do while), permitem ao programador criar lógica que toma decisões e repete ações de acordo com critérios definidos, possibilitando a construção de algoritmos complexos; a linguagem Java utiliza conceitos de encapsulamento, visibilidade e modificadores de acesso, como private, protected e public, que determinam quais partes do código podem acessar determinados dados ou métodos, promovendo segurança e organização; exceções e erros são tratados com blocos try, catch e finally, permitindo que situações inesperadas sejam gerenciadas sem que o programa seja interrompido abruptamente, garantindo robustez e confiabilidade; comentários, escritos com // para uma linha ou /* ... */ para múltiplas linhas, servem como documentação interna, explicando a lógica do código e facilitando a leitura por outros programadores; além da classe principal, programas Java podem conter múltiplas classes e pacotes, que organizam o código em módulos lógicos, permitindo que grandes sistemas sejam divididos em partes menores, mais fáceis de entender e manter; bibliotecas e frameworks, como JavaFX para interfaces gráficas, JDBC para banco de dados e Spring para desenvolvimento web, estendem as funcionalidades da linguagem, oferecendo ferramentas prontas que agilizam o desenvolvimento; por fim, o processo de compilação transforma o código fonte em bytecode, que é interpretado pela JVM em qualquer sistema operacional, garantindo portabilidade, enquanto práticas recomendadas, como seguir padrões de nomenclatura, organizar classes e métodos de forma lógica e escrever código limpo, contribuem para a criação de software eficiente, legível e profissional.
+    </div>
+  </main>
+
+  <section class="container my-3">
+    <h3>Exemplo de código em Java</h3>
+    <h3>Abaixo estão exemplos curtos de Java com explicações claras do propósito de cada um. Fique a vontade para copiar e colar diretamente no seu site ou adaptar o texto. Cada exemplo mostra um conceito essencial da linguagem.</h2>
+<p>Saída no console: Exibe mensagens no terminal, essencial para checar valores, testar funcionalidades ou mostrar resultados ao usuário.</p>
+<pre><code>
+System.out.println("Olá, Scriptoria!");
+</code></pre>
+
+<p>Variáveis e operações: Armazena dados como números e textos. Permite operações matemáticas e concatenação de strings de forma clara e segura.</p>
+<pre><code>
+String nome = "Ana";
+int idade = 22;
+String mensagem = nome + " tem " + idade + " anos.";
+System.out.println(mensagem);
+</code></pre>
+
+<p>Decisão com if/else: Permite executar blocos de código diferentes conforme condições, útil para validações e regras de negócio.</p>
+<pre><code>
+double nota = 7.5;
+String conceito;
+
+if (nota >= 9) {
+    conceito = "A";
+} else if (nota >= 7) {
+    conceito = "B";
+} else {
+    conceito = "C";
+}
+
+System.out.println(conceito);
+</code></pre>
+
+<p>Laço for (iteração): Percorre arrays ou listas, executando ações repetitivas. Ideal para processar coleções de dados.</p>
+<pre><code>
+String[] idiomas = {"Java", "Python", "C++"};
+
+for (String idioma : idiomas) {
+    System.out.println("Aprender " + idioma + " é útil.");
+}
+</code></pre>
+
+<p>Laço while (repetição controlada): Repete enquanto uma condição for verdadeira, útil em contadores ou fluxos dependentes de estado.</p>
+<pre><code>
+int contador = 3;
+
+while (contador > 0) {
+    System.out.println("Contando... " + contador);
+    contador--;
+}
+</code></pre>
+
+<p>Método com retorno: Encapsula uma tarefa, recebe entradas e devolve resultados, promovendo reutilização e organização.</p>
+<pre><code>
+public static int soma(int a, int b) {
+    return a + b;
+}
+
+int resultado = soma(2, 3);
+System.out.println(resultado);
+</code></pre>
+
+<p>Array e operações básicas: Armazena sequências de valores, acessíveis por índice. Útil para coleções fixas e processamento sequencial.</p>
+<pre><code>
+int[] numeros = {3, 1, 4};
+int[] ordenados = numeros.clone();
+Arrays.sort(ordenados);
+System.out.println(Arrays.toString(ordenados));
+</code></pre>
+
+<p>Map (chave-valor): Estrutura para armazenar dados nomeados. Útil para perfis de usuário, configurações ou registros complexos.</p>
+<pre><code>
+Map<String, Object> user = new HashMap<>();
+user.put("nome", "Lia");
+user.put("ativo", true);
+user.put("nivel", 5);
+user.put("cidade", "Recife");
+
+System.out.println(user.get("nome"));
+</code></pre>
+
+<p>Laço for com range (equivalente a list comprehension): Cria arrays derivados de forma controlada. Bom para gerar sequências ou cálculos repetitivos.</p>
+<pre><code>
+int[] quadrados = new int[5];
+for (int i = 0; i < quadrados.length; i++) {
+    quadrados[i] = (i + 1) * (i + 1);
+}
+System.out.println(Arrays.toString(quadrados));
+</code></pre>
+
+<h3>Arquivos, erros e utilidades</h3>
+<p>Leitura de arquivo: Abre e lê arquivos de forma segura. Essencial para importar dados ou configurações externas.</p>
+<pre><code>
+try {
+    List<String> linhas = Files.readAllLines(Paths.get("dados.txt"));
+    for (String linha : linhas) {
+        System.out.println(linha);
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+</code></pre>
+
+<p>Tratamento de exceções: Previne que erros interrompam o programa. Permite mensagens claras e recuperação de fluxo.</p>
+<pre><code>
+try {
+    int valor = Integer.parseInt("42a");
+} catch (NumberFormatException e) {
+    System.out.println("Entrada inválida: " + e.getMessage());
+}
+</code></pre>
+
+<p>Uso de biblioteca padrão (Math): Utiliza classes prontas para matemática, datas e outras utilidades comuns.</p>
+<pre><code>
+double raiz = Math.sqrt(16);
+System.out.println(raiz);
+</code></pre>
+
+<h3>Orientação a objetos e tipagem</h3>
+<p>Classe simples: Define entidades com estado e comportamento, permitindo criação de objetos e encapsulamento.</p>
+<pre><code>
+class Conta {
+    String titular;
+    double saldo;
+
+    Conta(String titular) {
+        this.titular = titular;
+        this.saldo = 0.0;
+    }
+
+    void depositar(double valor) {
+        saldo += valor;
+    }
+}
+
+Conta c = new Conta("Nara");
+c.depositar(100.0);
+System.out.println(c.saldo);
+</code></pre>
+
+<p>Métodos com parâmetros e retorno: Organiza lógica em funções dentro de classes, melhorando modularidade e legibilidade.</p>
+<pre><code>
+class Item {
+    String nome;
+    double preco;
+
+    Item(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+}
+
+double total(double[] precos) {
+    double soma = 0;
+    for (double p : precos) {
+        soma += p;
+    }
+    return soma;
+}
+
+System.out.println(total(new double[]{10.0, 5.5}));
+</code></pre>
+
+<h3>Scripts úteis e linha de comando</h3>
+<p>Argumentos via linha de comando: Permite passar parâmetros ao programa, útil para automações e pequenas ferramentas.</p>
+<pre><code>
+public static void main(String[] args) {
+    String nome = args.length > 0 ? args[0] : "Mundo";
+    System.out.println("Olá, " + nome + "!");
+}
+</code></pre>
+
+<p>Requisição HTTP simples: Utiliza bibliotecas para acessar APIs ou serviços web, essencial em backends e integrações.</p>
+<pre><code>
+import java.net.*;
+import java.io.*;
+
+try {
+    URL url = new URL("COLOQUE_AQUI_A_URL");
+    HttpURLConnection con = (HttpURLConnection) url.openConnection();
+    con.setRequestMethod("GET");
+    int status = con.getResponseCode();
+    System.out.println(status);
+} catch (IOException e) {
+    e.printStackTrace();
+}
+</code></pre>
+
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p>2025 Scriptoria — Todos os Direitos Reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
