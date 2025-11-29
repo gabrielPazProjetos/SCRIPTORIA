@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS — Scriptoria</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <div class="brand">
+        <h1 class="logo">Scriptoria</h1>
+      </div>
+      <nav class="nav">
+        <a href="../index.html" class="btn btn--soft">Início</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container hero__content">
+      <h2>Sobre CSS</h2>
+      <p>
+O CSS, ou Cascading Style Sheets, foi criado no início da década de 1990, mais precisamente em 1994, pela engenheira Håkon Wium Lie, que na época trabalhava no CERN, o mesmo laboratório onde a web começou a se desenvolver, com o objetivo de separar a apresentação visual do conteúdo estrutural das páginas web, algo que até então era feito de maneira limitada e muitas vezes confusa com o uso exclusivo de HTML; o grande desafio enfrentado por Lie e sua equipe era criar uma forma de permitir que designers e desenvolvedores pudessem controlar cores, fontes, espaçamentos, layouts e outros aspectos visuais de um site sem alterar o código HTML, algo revolucionário para a época, que buscava aumentar a produtividade, a consistência e a acessibilidade das páginas na internet; o conceito de “cascata” no CSS surgiu como uma solução para permitir que múltiplas regras de estilo pudessem ser aplicadas simultaneamente a um mesmo elemento, resolvendo conflitos entre estilos e permitindo maior flexibilidade na criação de layouts complexos; em 1996, o W3C (World Wide Web Consortium) oficializou o CSS como padrão para estilização de páginas web, e a linguagem rapidamente se destacou devido à sua capacidade de separar conteúdo de design, permitindo que sites fossem visualmente ricos sem comprometer a semântica ou a estrutura do HTML; desde seu lançamento, o CSS evoluiu constantemente, incorporando recursos avançados como seletores complexos, pseudo-classes, pseudo-elementos, animações, transições, flexbox, grid e variáveis, tornando-se indispensável para a construção de interfaces modernas, responsivas e acessíveis; a comunidade de desenvolvedores CSS cresceu exponencialmente, criando frameworks, bibliotecas e ferramentas como Bootstrap, Tailwind e Sass, que aumentam a produtividade e a consistência visual das aplicações; assim, o CSS não representa apenas uma linguagem de estilização, mas um marco fundamental na história da web, surgindo da necessidade de tornar a internet mais organizada, estética e funcional, evoluindo junto com a tecnologia e consolidando-se como um componente essencial para qualquer desenvolvedor front-end, combinando criatividade, flexibilidade e eficiência no design de interfaces digitais.
+      <p>
+CSS é uma linguagem de estilização que permite controlar a aparência de páginas web de forma precisa, definindo cores, fontes, tamanhos, espaçamentos, layouts e efeitos visuais; aprender CSS significa entender como organizar regras de estilo de maneira eficiente e aplicar boas práticas para manter o código legível, escalável e reutilizável; para começar a trabalhar com CSS, é necessário criar um arquivo com extensão .css ou incluir estilos diretamente no HTML através de tags style, compreendendo que cada regra é formada por um seletor, que identifica os elementos que receberão o estilo, e um bloco de declarações, onde cada propriedade e valor definem a aparência do elemento; os seletores podem ser simples, como tags ou classes, ou complexos, combinando hierarquias, pseudo-classes e pseudo-elementos, permitindo estilizar elementos de forma contextual e específica; conceitos fundamentais como box model, margens, padding, bordas e posicionamento são aplicados em cada elemento, permitindo que o desenvolvedor defina layouts claros, consistentes e responsivos; além disso, CSS incentiva a modularidade por meio de arquivos separados para estilos gerais, componentes e temas, que podem ser importados ou compilados com pré-processadores como Sass e Less, aumentando a manutenção e a reutilização do código; propriedades modernas como Flexbox e Grid permitem criar layouts complexos com facilidade e flexibilidade, ajustando alinhamento, distribuição e dimensões de elementos de maneira responsiva; media queries são essenciais para adaptar o layout e os estilos conforme o tamanho da tela ou dispositivo, garantindo que o site funcione bem em desktops, tablets e smartphones; outras funcionalidades avançadas incluem variáveis CSS, transições, animações, transformações e funções como calc(), min() e max(), que permitem ajustes dinâmicos sem depender de scripts adicionais; dominar CSS envolve compreender a ordem de cascata e especificidade, organizar as regras de forma lógica, aplicar estilos de forma eficiente e garantir compatibilidade entre navegadores, criando interfaces visuais consistentes e de alta qualidade; assim, CSS não é apenas uma linguagem de estilização, mas uma ferramenta essencial para desenvolvedores front-end, permitindo transformar conteúdo HTML em páginas visualmente atrativas, interativas e totalmente funcionais, de maneira organizada, eficiente e escalável.</p>
+<h2>Estrutura de código</h2>
+<p>
+    A estrutura de um código CSS segue um padrão organizado e modular, que permite criar estilos reutilizáveis, consistentes e de fácil manutenção; cada arquivo CSS é composto por regras, que são formadas por seletores, que identificam quais elementos HTML serão estilizados, e blocos de declarações, que contêm propriedades e valores definindo a aparência desses elementos; seletores podem ser simples, como tags, classes ou IDs, ou complexos, combinando hierarquias, pseudo-classes e pseudo-elementos, permitindo estilizar elementos de forma específica e contextual; propriedades e valores controlam diversos aspectos visuais, como cor, fonte, tamanho, espaçamento, bordas, alinhamento e posicionamento, e cada bloco de declarações deve ser organizado de forma clara, garantindo legibilidade e facilidade de manutenção; variáveis CSS, definidas com custom properties, permitem armazenar valores reutilizáveis como cores, tamanhos e fontes, facilitando alterações globais no design sem precisar modificar cada regra individualmente; a organização do código geralmente segue padrões de modularidade, separando estilos globais, layouts, componentes e temas em arquivos distintos que podem ser importados ou compilados com pré-processadores como Sass ou Less, promovendo consistência e reaproveitamento de estilos; media queries são usadas para criar designs responsivos, aplicando estilos diferentes dependendo do tamanho da tela ou características do dispositivo, garantindo que o layout se adapte corretamente a desktops, tablets e smartphones; propriedades modernas como Flexbox e Grid permitem definir layouts complexos de forma precisa e flexível, ajustando alinhamento, distribuição e dimensões de elementos sem depender de hacks ou cálculos manuais; transições, animações e transformações adicionam dinamismo aos elementos, melhorando a experiência do usuário e tornando interfaces mais interativas; comentários, escritos entre /* e */, são essenciais para documentar seções do código, explicar decisões de estilo ou fornecer instruções para outros desenvolvedores, aumentando a legibilidade e facilitando a colaboração em projetos maiores; frameworks e bibliotecas, como Bootstrap, Tailwind e Materialize, expandem as funcionalidades do CSS, oferecendo componentes prontos, padrões de layout e utilitários que aceleram o desenvolvimento; por fim, boas práticas, como organizar regras de forma lógica, nomear classes e IDs de maneira consistente, minimizar duplicação de estilos e manter a cascata sob controle, contribuem para a criação de códigos CSS eficientes, escaláveis e profissionais, capazes de transformar conteúdo HTML em interfaces visualmente consistentes, responsivas e de alta qualidade.
+</p>
+    </div>
+  </main>
+
+  <section class="container my-3">
+<h3>Exemplo de código em CSS</h3>
+<h3>Abaixo estão exemplos curtos de CSS com explicações claras do propósito de cada um. Cada exemplo mostra um conceito essencial da linguagem e já vem pronto para copiar.</h3>
+
+<p>Estilos básicos: Define cores de fundo, cor do texto e fonte para elementos da página.</p>
+<div class="code-container">
+  <pre><code>body {
+    background-color: #f0f0f0;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}</code></pre>
+</div>
+
+<p>Classes e IDs: Permitem estilizar elementos específicos ou grupos de elementos.</p>
+<div class="code-container">
+  <pre><code>.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+#principal {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}</code></pre>
+</div>
+
+<p>Box model: Controla margens, bordas, preenchimento e tamanho de elementos.</p>
+<div class="code-container">
+  <pre><code>.container {
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}</code></pre>
+</div>
+
+<p>Flexbox: Cria layouts flexíveis, alinhando e distribuindo elementos facilmente.</p>
+<div class="code-container">
+  <pre><code>.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}</code></pre>
+</div>
+
+<p>Grid: Facilita a criação de layouts complexos e responsivos.</p>
+<div class="code-container">
+  <pre><code>.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}</code></pre>
+</div>
+
+<p>Transições e animações: Adiciona efeitos visuais suaves aos elementos.</p>
+<div class="code-container">
+  <pre><code>.botao {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #005f75;
+}</code></pre>
+</div>
+
+<p>Pseudo-classes: Permite estilizar estados específicos de elementos.</p>
+<div class="code-container">
+  <pre><code>a:link {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}</code></pre>
+</div>
+
+<p>Variáveis CSS: Facilita a manutenção de cores e tamanhos repetidos.</p>
+<div class="code-container">
+  <pre><code>:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #e8f0fe;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+section {
+    background-color: var(--secondary-color);
+}</code></pre>
+</div>
+
+<p>Responsividade com media queries: Adapta o layout para diferentes tamanhos de tela.</p>
+<div class="code-container">
+  <pre><code>@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+}</code></pre>
+</div>
+
+<p>Exemplo de script e estilo:</p>
+<div class="code-container">
+  <pre><code>&lt;script&gt;
+function copyCode(btn) {
+    const code = btn.nextElementSibling.querySelector('code').innerText;
+    navigator.clipboard.writeText(code).then(() =&gt; {
+        btn.innerText = 'Copiado!';
+        setTimeout(() =&gt; btn.innerText = 'Copiar', 2000);
+    });
+}
+&lt;/script&gt;
+
+&lt;style&gt;
+.code-container {
+    position: relative;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.copy-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+pre {
+    margin: 0;
+    padding: 40px 10px 10px 10px;
+    overflow-x: auto;
+    background: #f9f9f9;
+}
+&lt;/style&gt;</code></pre>
+
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p>2025 Scriptoria — Todos os Direitos Reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
