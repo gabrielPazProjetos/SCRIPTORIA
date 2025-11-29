@@ -1,41 +1,48 @@
-// Elementos
+// ================== Selecionar elementos ==================
 const sidebar = document.getElementById("sidebar");
 const overlay = document.getElementById("overlay");
-const toggleSidebarBtn = document.getElementById("toggleSidebar");
 const closeSidebarBtn = document.getElementById("closeSidebar");
-const quickLanguagesBtn = document.getElementById("quickLanguages");
 
-// Funções
-function openSidebar() {
-  sidebar.classList.add("sidebar--open");
-  overlay.classList.add("overlay--active");
-  toggleSidebarBtn.textContent = "Fechar linguagens";
-}
+// Botões do header
+const btnSobre = document.getElementById("btn-sobre");
+const btnAtualizacoes = document.getElementById("btn-atualizacoes");
+const btnArtigos = document.getElementById("btn-artigos"); 
 
+// ================== Funções ==================
+
+// Fecha a sidebar
 function closeSidebar() {
-  sidebar.classList.remove("sidebar--open");
-  overlay.classList.remove("overlay--active");
-  toggleSidebarBtn.textContent = "Linguagens";
+  if (sidebar && overlay) {
+    sidebar.classList.remove("sidebar--open");
+    overlay.classList.remove("overlay--active");
+  }
 }
 
-// Eventos
-toggleSidebarBtn.addEventListener("click", () => {
-  const isOpen = sidebar.classList.contains("sidebar--open");
-  if (isOpen) {
-    closeSidebar();
-  } else {
-    openSidebar();
-  }
+// ================== Eventos ==================
+
+// Botão fechar sidebar
+closeSidebarBtn?.addEventListener("click", closeSidebar);
+
+// Clicar no overlay fecha a sidebar
+overlay?.addEventListener("click", closeSidebar);
+
+// Clicar nos links dentro da sidebar fecha a sidebar
+sidebar?.querySelectorAll(".sidebar__link").forEach(link => {
+  link.addEventListener("click", closeSidebar);
 });
 
-closeSidebarBtn.addEventListener("click", closeSidebar);
-overlay.addEventListener("click", closeSidebar);
-quickLanguagesBtn.addEventListener("click", openSidebar);
+// ================== Redirecionamentos ==================
 
-// Redirecionamentos nos links da sidebar
-document.querySelectorAll(".sidebar__link").forEach(link => {
-  link.addEventListener("click", () => {
-    closeSidebar(); // fecha a sidebar
-    // o navegador segue o href normalmente
-  });
+// Botões do header redirecionam para suas páginas
+btnSobre?.addEventListener("click", () => {
+  window.location.href = "sobre/sobre.html";
+});
+btnAtualizacoes?.addEventListener("click", () => {
+  window.location.href = "atualizacao/atualizacao.html";
+});
+btnArtigos?.addEventListener("click", () => {
+  window.location.href = "artigos/artigos.html";
+});
+btnArtigos?.addEventListener("click", () => {
+  window.location.href = "index.html";
 });
