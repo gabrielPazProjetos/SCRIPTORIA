@@ -6,51 +6,80 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Header -->
   <header class="header">
     <div class="container header__content">
       <div class="brand">
-        <!-- Espaço para ícone -->
         <img src="img/Logo.png" alt="Logo" class="brand__icon">
-        <h1 class="logo">Scriptoria</h1>
+        <h1 class="brand__name">Scriptoria</h1>
       </div>
       <nav class="nav">
-        <button id="btn-sobre" class="btn" data-label="Sobre">Sobre</button>
-        <button id="btn-atualizacoes" class="btn" data-label="Atualizações">Atualização</button>
+        <button id="btn-sobre" class="btn btn--soft">Sobre</button>
+        <button id="btn-atualizacoes" class="btn btn--soft">Atualização</button>
+        <button id="btn-artigos" class="btn btn--accent">Artigos</button>
+
       </nav>
     </div>
   </header>
 
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <button id="closeSidebar" class="btn btn--ghost">X</button>
+    <ul>
+      <li><a href="wiki/python.html" class="sidebar__link">Python</a></li>
+      <li><a href="wiki/java.html" class="sidebar__link">Java</a></li>
+      <li><a href="wiki/html.html" class="sidebar__link">HTML</a></li>
+      <li><a href="wiki/css.html" class="sidebar__link">CSS</a></li>
+      <li><a href="wiki/javascript.html" class="sidebar__link">JavaScript</a></li>
+      <!-- Adicione mais links de artigos aqui -->
+    </ul>
+  </div>
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Hero -->
   <main class="hero">
     <div class="container hero__content">
-      <h2>Um espaço inspirado nos antigos códices, onde o conhecimento sobre programação é preservado.</h2>
+      <h2 class="hero__title">
+        Um espaço inspirado nos antigos códices, onde o conhecimento sobre programação é preservado.
+      </h2>
+      <p class="hero__subtitle">Aprenda, pratique e compartilhe conhecimento</p>
     </div>
   </main>
 
-  <!-- Painel de tópicos oculto -->
+  <!-- Painel de tópicos -->
   <section id="topicos-panel" class="panel">
     <div class="container">
       <ul>
         <li><a href="wiki/python.html">Python</a></li>
+        <li><a href="wiki/java.html">Java</a></li>
+        <li><a href="wiki/html.html">HTML</a></li>
+        <li><a href="wiki/css.html">CSS</a></li>
+        <li><a href="wiki/javascript.html">JavaScript</a></li>
       </ul>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>2025 Scriptoria — Todos os Direitos Reservados.</p>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="js/main.js"></script>
   <script>
-    // Redirecionamentos dos botões
-    document.getElementById("btn-sobre").onclick = function() {
+    // Redirecionamento dos botões do header
+    document.getElementById("btn-sobre").onclick = () => {
       window.location.href = "sobre/sobre.html";
     };
-
-    document.getElementById("btn-atualizacoes").onclick = function() {
+    document.getElementById("btn-atualizacoes").onclick = () => {
       window.location.href = "atualizacao/atualizacao.html";
     };
+      document.getElementById("btn-artigos").onclick = () => {
+    window.location.href = "artigos/artigos.html";
+  };
   </script>
 </body>
 </html>
